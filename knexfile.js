@@ -8,7 +8,7 @@ require('dotenv').config();
   client: "pg",
   connection:
     process.env.DATABASE_URL ||
-    `postgres://${process.env.DB_USER}:${process.env.DB_PASSWORD}@127.0.0.1:5432/truckstop`,
+    `postgres://${process.env.DB_USER}:${process.env.DB_PASSWORD}@127.0.0.1:5432/turnip_api`,
   migrations: {
     tableName: "knex_migrations",
     directory: "./migrations",
