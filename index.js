@@ -6,7 +6,8 @@ const PORT = process.env.PORT || 6060;
 const cors = require('cors');
 app.use(
 	cors({
-		origin : '*'
+		origin : '*',
+        methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
 	})
 );
 
