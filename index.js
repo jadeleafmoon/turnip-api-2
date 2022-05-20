@@ -16,10 +16,6 @@ const knex = require('knex')(config);
 
 app.get('/hello', (req, res) => {
 	res.send('Hello world from TURNIP API 2!');
-	// knex.raw('SELECT VERSION()').then((data) => {
-	//     console.log('🔥 version', data);
-
-	// });
 });
 
 app.get('/items', (req, res) => {
