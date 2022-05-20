@@ -7,8 +7,11 @@ const config = require('./knexfile');
 const knex = require('knex')(config)[process.env.NODE_ENV || 'development'];
 
 app.get('/hello', (req, res) => {
-    knex.raw('SELECT VERSION()').then((data) => console.log('🔥 version', data));
-	// res.send('Hello world !');
+    knex.raw('SELECT VERSION()').then((data) => {
+        console.log('🔥 version', data);
+        res.send('Hello world !');
+    });
+	
 });
 
 app.get('/', (req, res) => {
