@@ -10,6 +10,7 @@ app.use(
         methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
 	})
 );
+app.use(express.json());
 
 const config = require('./knexfile');
 const knex = require('knex')(config);
