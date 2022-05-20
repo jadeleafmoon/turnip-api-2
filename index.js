@@ -16,6 +16,14 @@ app.get('/hello', (req, res) => {
 	
 });
 
+app.get('/items', (req, res) => {
+	knex('items').orderBy('id', 'desc').returning('*').then((data) => {
+		console.log("💜 data", data);
+		res.send(data);
+		
+	});
+});
+
 app.get('/', (req, res) => {
 	res.send('Hi there! You have reached / !');
 });
