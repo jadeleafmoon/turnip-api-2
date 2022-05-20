@@ -1,6 +1,5 @@
 require('dotenv').config();
 const express = require('express');
-const { restart } = require('nodemon');
 const app = express();
 const PORT = process.env.PORT || 6060;
 
@@ -19,12 +18,11 @@ app.get('/hello', (req, res) => {
 app.get('/items', (req, res) => {
 	// knex.raw('SELECT version()').then((data) => {
 	// 	console.log('🔥 version', data.rows[0].version);
-    //     res.send("Working!");
+	//     res.send("Working!");
 	// });
 	knex('items').orderBy('id', 'desc').returning('*').then((data) => {
-		console.log("💜 data", data);
+		console.log('💜 data', data);
 		res.send(data);
-
 	});
 });
 
