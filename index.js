@@ -12,7 +12,6 @@ app.use(
 );
 
 const config = require('./knexfile');
-// const knex = require('knex')(config)[process.env.NODE_ENV || 'development'];
 const knex = require('knex')(config);
 
 app.get('/hello', (req, res) => {
