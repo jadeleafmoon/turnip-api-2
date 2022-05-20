@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/jadeleafmoon/turnip-api-2#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "knex": "^2.0.0",
+    "pg": "^8.7.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
