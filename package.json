@@ -1,0 +1,25 @@
+{
+  "name": "turnip-api-2",
+  "version": "1.0.0",
+  "description": "## Welcome to the Turnup API!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jadeleafmoon/turnip-api-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jadeleafmoon/turnip-api-2/issues"
+  },
+  "homepage": "https://github.com/jadeleafmoon/turnip-api-2#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
