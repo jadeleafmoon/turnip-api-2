@@ -1,12 +1,13 @@
 require('dotenv').config();
 const express = require('express');
-const app = express();
+
 const PORT = process.env.PORT || 6060;
 
 const cors = require('cors');
 
 (async () => {
 	try {
+		const app = express();
 		app.use(
 			cors({
 				origin      : '*',
