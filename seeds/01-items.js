@@ -18,7 +18,6 @@ exports.seed = async function (knex) {
       price: 10.5,
       owner: "Bob",
       description: "Some description text.",
-      imageUrl: null,
       imageUrl: "",
     },
     {
