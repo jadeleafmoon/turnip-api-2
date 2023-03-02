@@ -29,7 +29,7 @@ Steps to using this API:
 
 Please create the following on your local root project folder:
 
-- a .env.local file in the root directory. This will contain your dusername, db password, and db name.
+- a .env.local file in the root directory. This will contain your db username, db password, and db name.
 - a local PSQL databased name turnip_test
 
 
